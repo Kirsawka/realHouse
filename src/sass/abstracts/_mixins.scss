@@ -1,0 +1,27 @@
+@mixin font($size: null, $height: null, $color: null, $weight: normal, $style: normal) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $height {
+    line-height: $height;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $style {
+    font-style: $style;
+  }
+}
+
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+}

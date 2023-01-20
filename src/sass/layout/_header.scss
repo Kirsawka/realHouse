@@ -1,0 +1,61 @@
+.header__container {
+  @include flex(space-between);
+  padding: 84px 20px;
+
+  @media screen and (max-width: 767px) {
+    padding: 28px 15px 36px;
+  }
+}
+
+.header__logo {
+  background: url("../assets/svg/logo.svg");
+  background-size: 100% auto;
+  width: 204px;
+  height: 49.11px;
+
+  @media screen and (max-width: 425px) {
+    width: 135px;
+    height: 32.5px;
+  }
+}
+
+.header__consult {
+  margin-right: 60px;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header__burger {
+  position: relative;
+  width: 35px;
+  height: 24px;
+  cursor: pointer;
+
+  &:after,
+  &:before {
+    content: '';
+    @extend %burger-menu-line;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 22px;
+    height: 15px;
+  }
+}
+
+.header__burger-line {
+  @extend %burger-menu-line;
+  top: 50%;
+  transform: translateY(-50%);
+}

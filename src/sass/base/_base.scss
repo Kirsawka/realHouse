@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+//TODO скачать и подключить шрифт Gilroy
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: $font-primary;
+  background: $color-bg;
+  //TODO добавить картинку к background body
+  color: $color-light;
+  margin: 0;
+}
+
+.container {
+  max-width: $width-content;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}

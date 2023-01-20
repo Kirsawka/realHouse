@@ -1,0 +1,17 @@
+.consult__phone {
+  @include font(28px, 34px, $color-light, 700);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  text-decoration: none;
+}
+
+.consult__phone-number_dark {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.consult__text {
+  font-family: $font-additional;
+  @include font(16px, 21px, $color-primary);
+  text-align: right;
+  margin: 0;
+  cursor: pointer;
+}
