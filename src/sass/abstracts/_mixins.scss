@@ -25,3 +25,14 @@
     align-items: $align;
   }
 }
+
+@mixin flexColumn($justify: center, $align: center) {
+  display: flex;
+  flex-direction: column;
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+}

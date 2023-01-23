@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
-//TODO скачать и подключить шрифт Gilroy
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Gilroy/gilroy-regular.woff2') format('woff2'),
+  url('../assets/fonts/Gilroy/gilroy-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Gilroy/gilroy-medium.woff2') format('woff2'),
+  url('../assets/fonts/Gilroy/gilroy-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Gilroy/gilroy-semibold.woff2') format('woff2'),
+  url('../assets/fonts/Gilroy/gilroy-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Gilroy/gilroy-bold.woff2') format('woff2'),
+  url('../assets/fonts/Gilroy/gilroy-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Gilroy/gilroy-extrabold.woff2') format('woff2'),
+  url('../assets/fonts/Gilroy/gilroy-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box
@@ -18,4 +62,57 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section {
+  padding: 84px 0;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding: 37px 0;
+  }
+}
+
+.title {
+  @include font(64px, 80px, $color-light, 800);
+  max-width: 1093px;
+  margin: 0;
+
+  @media screen and (max-width: 767px) {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.title_colored {
+  color: $color-primary;
+}
+
+.text {
+  font-family: $font-additional;
+  @include font(28px, 44px, $color-light);
+  margin: 40px 0 73px;
+  max-width: 654px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 28px auto 28px;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+}
+
+.text_colored {
+  color: $color-primary;
+  font-weight: 600;
 }

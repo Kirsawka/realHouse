@@ -1,0 +1,44 @@
+.button {
+  font-family: inherit;
+  max-width: 316px;
+  width: 100%;
+  background-color: $color-primary;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  transition: .3s;
+
+  @media screen and (max-width: 425px) {
+    max-width: 290px;
+  }
+}
+
+.button:hover {
+  background-color: $color-primary-hovered;
+}
+
+.button:active {
+  background-color: $color-primary-focused;
+}
+
+.button_big {
+  @include font(20px, 24px, $color-bg, 600);
+  height: 90px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 19px;
+    height: 64px;
+  }
+}
+
+.button_small {
+  @include font(16px, 19px, $color-bg, 500);
+  height: 74px;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+}
+

@@ -32,6 +32,10 @@ module.exports = ({ development }) => ({
   module: {
     rules: [
       {
+        test: /\.(html)$/,
+        use: ['html-loader'],
+      },
+      {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
         type: 'asset/resource',
       },
