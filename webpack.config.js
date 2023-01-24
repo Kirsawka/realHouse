@@ -68,5 +68,8 @@ module.exports = ({ development }) => ({
   resolve: {
     extensions: ['.js'],
   },
+  performance: {
+    maxAssetSize: 512000,
+  },
   ...devServer(development),
 });
