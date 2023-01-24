@@ -192,4 +192,25 @@ body {
 .degree {
   font-size: 35px;
   line-height: 35px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.section__form {
+  margin-top: 32px;
+
+  @media screen and (max-width: 425px) {
+    margin-top: 32px;
+  }
+}
+
+.line-break {
+  display: block;
+
+  @media screen and (max-width: 425px) {
+    display: inline;
+  }
 }

@@ -14,6 +14,10 @@
     row-gap: 28px;
     justify-content: center;
   }
+
+  @media screen and (max-width: 425px) {
+    column-gap: 0;
+  }
 }
 
 .list__item {
