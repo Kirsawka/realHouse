@@ -5,7 +5,6 @@
   max-width: 540px;
   @include flex(space-between, null);
   flex-wrap: wrap;
-  justify-self: end;
   column-gap: 30px;
   grid-area: content2;
 
