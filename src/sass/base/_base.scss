@@ -51,10 +51,14 @@
 
 body {
   font-family: $font-primary;
-  background: $color-bg;
-  //TODO добавить картинку к background body
+  background-color: $color-bg;
+  background-image: url('../assets/svg/background.svg');
   color: $color-light;
   margin: 0;
+
+  @media screen and (max-width: 425px) {
+    background-image: none;
+  }
 }
 
 .container {
